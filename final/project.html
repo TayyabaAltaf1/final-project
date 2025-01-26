@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fast Typing Game</title>
+
+  <link rel="stylesheet" href="project.css">
+ 
+</head>
+<body>
+  <div id="game-container">
+    <h1>Fast Typing Game</h1>
+    <div class="controls">
+      <label for="difficulty">Difficulty</label>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </div>
+    <p>Score: <span id="score">0</span></p>
+    <p>Time: <span id="time">10</span>s</p>
+    <p id="word">word</p>
+    <input type="text" id="input" placeholder="Type the word above" />
+    <div id="end-game-container" class="hidden">
+      <h2>The clock has run out!</h2>
+      <p>Your score is <span id="final-score">0</span></p>
+      <button onclick="startGame()">Play Again</button>
+    </div>
+  </div>
+  <script src="./project.js"></script>
+</body>
+</html>
